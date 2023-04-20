@@ -54,7 +54,7 @@ def main():
             break
         success, video = cam.read()
         video = detector.findPose(video)
-        lmList = detector.findPosition(video)
+        lmList = detector.findPosition(video, draw=False)
 
         cTime = time.time()
         fps = 1 / (cTime - pTime)
