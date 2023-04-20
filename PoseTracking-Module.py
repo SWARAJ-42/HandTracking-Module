@@ -22,7 +22,7 @@ class PoseDetector():
                                      self.smooth_segmentation, self.min_detection_confidence, self.min_tracking_confidence)
         self.mpDraw = mp.solutions.drawing_utils
 
-    def find_pose(self, video, draw=True):
+    def findPose(self, video, draw=True):
         videoRGB = cv2.cvtColor(video, cv2.COLOR_BGR2RGB)
         self.results = self.pose.process(videoRGB)
         if self.results.pose_landmarks:
@@ -53,7 +53,7 @@ def main():
         if keyboard.is_pressed('q'):
             break
         success, video = cam.read()
-        video = detector.find_pose(video)
+        video = detector.findPose(video)
         lmList = detector.findPosition(video)
 
         cTime = time.time()

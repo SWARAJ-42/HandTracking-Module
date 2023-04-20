@@ -16,7 +16,7 @@ class HandDetector():
         self.hands = self.mpHands.Hands(self.mode, self.maxHands, self.complexity, self.min_detectionConf, self.min_trackConf)
         self.mpDraw = mp.solutions.drawing_utils
 
-    def find_hands(self, video, draw=True):
+    def findHands(self, video, draw=True):
         self.videoRGB = cv2.cvtColor(video, cv2.COLOR_BGR2RGB)
         self.results = self.hands.process(self.videoRGB)
         if self.results.multi_hand_landmarks:
@@ -51,7 +51,7 @@ def main():
         if keyboard.is_pressed('q'):
             break;
         success, video = cam.read()
-        video = detector.find_hands(video)
+        video = detector.findHands(video)
         lmList = detector.findPosition(video, draw=False)
 
         cTime = time.time()
