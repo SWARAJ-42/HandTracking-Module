@@ -15,3 +15,11 @@ A Module using OpenCV to track upto 33 significant points of whole body.
 - PoseTracking-Module.py
 
 <img src='./README_images/PoseTracking.png' width=400>
+
+## FaceDetection-Module
+
+A Module using OpenCV to detect faces.
+
+- FaceDetection-Module.py
+
+<img src='./README_images/FaceDetection.png' width=400>
