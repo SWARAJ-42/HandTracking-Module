@@ -23,3 +23,11 @@ A Module using OpenCV to detect faces.
 - FaceDetection-Module.py
 
 <img src='./README_images/FaceDetection.png' width=400>
+
+## FaceMesh-Module
+
+A Module using OpenCV to detect upto 478 face points.
+
+- FaceMesh-Module.py
+
+<img src='./README_images/FaceMesh.png' width=400>
