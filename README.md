@@ -26,7 +26,7 @@ A Module using OpenCV to detect faces.
 
 ## FaceMesh-Module
 
-A Module using OpenCV to detect upto 478 face points.
+A Module using OpenCV to detect upto 128 face points.
 
 - FaceMesh-Module.py
 
